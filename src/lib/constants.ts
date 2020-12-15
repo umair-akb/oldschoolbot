@@ -84,6 +84,7 @@ export const enum Emoji {
 	Timer = '<:ehpclock:352323705210142721>',
 	ChristmasCracker = '<:cracker:785389969962958858>',
 	SantaHat = '<:santaHat:785874868905181195>',
+	Hunter = '<:hunter:630911040166559784>',
 	// Badges,
 	BigOrangeGem = '<:bigOrangeGem:778418736188489770>',
 	GreenGem = '<:greenGem:778418736495067166>',
