@@ -141,11 +141,15 @@ export const enum Tasks {
 	AnimatedArmourActivity = 'animatedArmourActivity',
 	CyclopsActivity = 'cyclopsActivity',
 	SepulchreActivity = 'sepulchreActivity',
+	PlunderActivity = 'plunderActivity',
 	FishingTrawler = 'trawlerActivity',
 	ZalcanoActivity = 'zalcanoActivity',
 	SawmillActivity = 'sawmillActivity',
 	PickpocketActivity = 'pickpocketActivity',
 	TitheFarmActivity = 'titheFarmActivity',
+	BarbarianAssault = 'barbarianAssaultActivity',
+	AgilityArena = 'agilityArenaActivity',
+
 	MonsterKillingTicker = 'monsterKillingTicker',
 	ClueTicker = 'clueTicker',
 	SkillingTicker = 'skillingTicker',
@@ -182,10 +186,13 @@ export const enum Activity {
 	Sawmill = 'Sawmill',
 	Nightmare = 'Nightmare',
 	Sepulchre = 'Sepulchre',
+	Plunder = 'Plunder',
 	FishingTrawler = 'FishingTrawler',
 	Zalcano = 'Zalcano',
 	Farming = 'Farming',
-	DeliverPresents = 'DeliverPresents'
+	DeliverPresents = 'DeliverPresents',
+	BarbarianAssault = 'BarbarianAssault',
+	AgilityArena = 'AgilityArena'
 }
 
 export const enum Events {

@@ -28,12 +28,44 @@ const wintertodtLog = resolveItems([
 	'Dragon axe'
 ]);
 
+const barbAssaultLog = resolveItems([
+	'Pet penance queen',
+	'Fighter torso',
+	'Fighter hat',
+	'Healer hat',
+	'Runner hat',
+	'Ranger hat',
+	'Runner boots',
+	'Penance gloves',
+	'Penance skirt'
+]);
+
+const agilityArenaLog = resolveItems([
+	'Agility arena ticket',
+	"Pirate's hook",
+	'Brimhaven graceful hood',
+	'Brimhaven graceful top',
+	'Brimhaven graceful legs',
+	'Brimhaven graceful gloves',
+	'Brimhaven graceful boots',
+	'Brimhaven graceful cape'
+]);
+
 const zalcanoLog = resolveItems([
 	'Crystal shard',
 	'Zalcano shard',
 	'Smolcano',
 	'Uncut onyx',
 	'Crystal tool seed	'
+]);
+
+export const farmersOutfit = resolveItems([
+	`Farmer's strawhat`,
+	`Farmer's jacket`,
+	`Farmer's shirt`,
+	`Farmer's boro trousers`,
+	`Farmer's boots`,
+	`Tangleroot`
 ]);
 
 export const anglerOutfit = resolveItems([
@@ -1248,7 +1280,7 @@ export const diangoCollectionLog: CollectionLogData = {
 };
 
 export const capes: CollectionLogData = {
-	hoods: resolveItems([
+	hoods1: resolveItems([
 		'Mining hood',
 		'Smithing hood',
 		'Woodcutting hood',
@@ -1295,7 +1327,10 @@ export const capes: CollectionLogData = {
 		'Thieving cape(t)',
 		'Farming cape(t)',
 		'Quest point cape (t)'
-	])
+	]),
+	hoods2: resolveItems(['Farming hood', 'Quest point hood']),
+	capes2: resolveItems(['Farming cape', 'Quest point cape']),
+	'trimmed capes2': resolveItems(['Farming cape(t)', 'Quest point cape (t)'])
 };
 
 export const quest: CollectionLogData = {
@@ -1438,7 +1473,10 @@ export const skillingLog: CollectionLogData = {
 		'Dark squirrel'
 	]),
 	Angler: anglerOutfit,
-	Zalcano: zalcanoLog
+	Farmer: farmersOutfit,
+	Zalcano: zalcanoLog,
+	Plunder: resolveItems(["Pharaoh's sceptre (3)", 'Rocky']),
+	AgilityArena: agilityArenaLog
 };
 
 export const allCollectionLogItems = removeDuplicatesFromArray(
@@ -1597,5 +1635,15 @@ export const collectionLogTypes: CollectionLogType[] = [
 		name: 'Barrows',
 		aliases: ['barrows'],
 		items: barrows
+	},
+	{
+		name: 'Barbarian Assault',
+		aliases: ['ba', 'barb assault', 'barbarian assault'],
+		items: { 1: barbAssaultLog }
+	},
+	{
+		name: 'Agility Arena',
+		aliases: ['aa', 'agility arena'],
+		items: { 1: agilityArenaLog }
 	}
 ];

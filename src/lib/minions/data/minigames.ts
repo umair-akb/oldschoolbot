@@ -36,6 +36,18 @@ export const Minigames: Minigame[] = [
 	{
 		id: 44225,
 		name: 'DeliverPresents'
+	},
+	{
+		id: 2007,
+		name: 'Barbarian Assault'
+	},
+	{
+		id: 6001,
+		name: 'Pyramid Plunder'
+	},
+	{
+		id: 49592,
+		name: 'Brimhaven Agility Arena'
 	}
 ];
 
@@ -48,5 +60,8 @@ export enum MinigameIDsEnum {
 	FishingTrawler = 9525,
 	Zalcano = 2312,
 	TitheFarm = 20661,
-	DeliverPresents = 44225
+	DeliverPresents = 44225,
+	BarbarianAssault = 2007,
+	PyramidPlunder = 6001,
+	AgilityArena = 49592
 }
