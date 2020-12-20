@@ -9,3 +9,7 @@ const Hunter = {
 };
 
 export default Hunter;
+
+/**
+ * Gloves of silence - They reduce your chance of failure while pickpocketing by 5%. 1 in 80-ish chance to break.
+ */
