@@ -82,5 +82,11 @@ const Huntables: Huntable[] = [
 		xp: 315,
 		level: 73,
 		table: new LootTable().every('Black chinchompa')
+	},
+	{
+		name: 'Herbiboar',
+		xp: 0,
+		level: 80,
+		table: new LootTable().every('Ranarr weed')
 	}
 ];
