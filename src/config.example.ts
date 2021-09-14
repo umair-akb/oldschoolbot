@@ -20,7 +20,7 @@ export const patreonConfig: PatreonConfig = null;
 export const customClientOptions: Partial<KlasaClientOptions> = {
 	prefix: '-',
 	// Your account unique ID
-	owners: ['157797566833098752']
+	owners: ['568360658156912640']
 };
 export const SENTRY_DSN: string | null = null;
 export const HTTP_PORT = 1234;
@@ -29,5 +29,5 @@ export const CLIENT_ID = '';
 export const GITHUB_TOKEN = '';
 export const DISCORD_SETTINGS: Partial<IDiscordSettings> = {
 	// Your bot unique ID goes here
-	BotID: '303730326692429825'
+	BotID: '887115831618707496'
 };
