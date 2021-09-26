@@ -4,15 +4,15 @@ import { IDiscordSettings, PatreonConfig, ProviderConfig, RedditAppConfig, Twitt
 
 export const botToken = '${{ secrets.SECRET_TOKEN }}';
 export const providerConfig: ProviderConfig | null = {
-	default: 'postgres',
+	default: 'postgres123',
 	postgres: {
-		database: 'postgres',
-		user: 'postgres',
-		password: 'postgres',
-		port: 5432
+		database: 'postgres123',
+		user: 'postgres123',
+		password: 'postgres123',
+		port: 54322
 	}
 };
-export const production = false;
+export const production = true;
 
 export const redditAppConfig: RedditAppConfig = null;
 export const twitterAppConfig: TwitterAppConfig = null;
@@ -23,7 +23,7 @@ export const customClientOptions: Partial<KlasaClientOptions> = {
 	owners: ['568360658156912640']
 };
 export const SENTRY_DSN: string | null = null;
-export const HTTP_PORT = 1234;
+export const HTTP_PORT = 880;
 export const CLIENT_SECRET = '';
 export const CLIENT_ID = '';
 export const GITHUB_TOKEN = '';
