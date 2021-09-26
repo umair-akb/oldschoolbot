@@ -2,7 +2,7 @@ import { KlasaClientOptions } from 'klasa';
 
 import { IDiscordSettings, PatreonConfig, ProviderConfig, RedditAppConfig, TwitterAppConfig } from './lib/types';
 
-export const botToken = '';
+export const botToken = '${{ secrets.SECRET_TOKEN }}';
 export const providerConfig: ProviderConfig | null = {
 	default: 'postgres',
 	postgres: {
@@ -29,5 +29,5 @@ export const CLIENT_ID = '';
 export const GITHUB_TOKEN = '';
 export const DISCORD_SETTINGS: Partial<IDiscordSettings> = {
 	// Your bot unique ID goes here
-	BotID: '887115831618707496'
+	BotID: '890811989650186270'
 };
