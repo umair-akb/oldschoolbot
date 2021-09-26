@@ -2,7 +2,6 @@ import { Client, KlasaClientOptions } from 'klasa';
 import { join } from 'path';
 import { Connection, createConnection } from 'typeorm';
 
-import { providerConfig } from '../../config';
 import { clientOptions } from '../config';
 import { getGuildSettings, syncActivityCache } from '../settings/settings';
 import { piscinaPool } from '../workers';
@@ -12,8 +11,6 @@ const { production } = clientOptions;
 if (typeof production !== 'boolean') {
 	throw new Error('Must provide production boolean.');
 }
-
-const { port, user, password, database } = providerConfig!.postgres!;
 
 import('../settings/schemas/UserSchema');
 import('../settings/schemas/GuildSchema');
@@ -34,10 +31,10 @@ export class OldSchoolBotClient extends Client {
 		this.orm = await createConnection({
 			type: 'postgres',
 			host: 'localhost',
-			port,
-			username: user,
-			password,
-			database,
+			port: 5432,
+			username: `postgres`,
+			password: `postgres`,
+			database: 'foo',
 			entities: [join(__dirname, '..', 'typeorm', '*.entity{.ts,.js}')],
 			synchronize: !production
 		});
