@@ -31,9 +31,9 @@ export class OldSchoolBotClient extends Client {
 		this.orm = await createConnection({
 			type: 'postgres',
 			host: 'localhost',
-			port: 5432,
-			username: `postgres`,
-			password: `postgres`,
+			port: 54322,
+			username: `postgres123`,
+			password: `postgres123`,
 			database: 'foo',
 			entities: [join(__dirname, '..', 'typeorm', '*.entity{.ts,.js}')],
 			synchronize: !production

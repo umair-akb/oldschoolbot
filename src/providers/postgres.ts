@@ -56,7 +56,7 @@ export default class extends SQLProvider {
 		const poolOptions = mergeDefault<PostgresOptions, PostgresOptions>(
 			{
 				host: 'localhost',
-				port: 5432,
+				port: 54322,
 				database: 'klasa',
 				max: 30,
 				idleTimeoutMillis: 30_000,
